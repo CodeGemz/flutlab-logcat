@@ -4,13 +4,19 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9dd937d-a4e5-4659-bc7e-bdc75e656c42" name="Default Changelist" comment="" />
+    <list default="true" id="c9dd937d-a4e5-4659-bc7e-bdc75e656c42" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[SerialNumber@5203d38bb4858355]" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1lTHc1iss5y9d0Ittb86nR3gMaS" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -32,13 +38,29 @@
       <option name="presentableId" value="Default" />
       <updated>1607614238404</updated>
     </task>
+    <task id="LOCAL-00001" summary="UncaughtExceptionHandler">
+      <created>1608800915215</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1608800915215</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="UncaughtExceptionHandler" />
+    <option name="LAST_COMMIT_MESSAGE" value="UncaughtExceptionHandler" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607616192932">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.95.1600.860/0.0.1920.1040@0.0.1920.1040" timestamp="1607616192932" />
+    <state x="385" y="0" key="CommitChangelistDialog2" timestamp="1608800914081">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="385" y="0" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1608800914081" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1607686211505">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
