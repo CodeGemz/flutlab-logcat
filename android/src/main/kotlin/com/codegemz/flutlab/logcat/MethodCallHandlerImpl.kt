@@ -9,9 +9,12 @@ import android.util.Log
 import com.codegemz.flutlab.logcat.util.ApplicationUtils
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
+import org.json.JSONArray
+import org.json.JSONObject
 
 
 class MethodCallHandlerImpl(private val context: Context) : MethodChannel.MethodCallHandler {
+    private val globalExceptionHandler = GlobalExceptionHandler(::onUncaughtException)
     private var messenger: Messenger? = null
     private var connecting = false
     private var connected = false
@@ -32,6 +35,10 @@ class MethodCallHandlerImpl(private val context: Context) : MethodChannel.Method
                 }
             })
             this.logsObserver = logsObserver
+            Handler(Looper.getMainLooper()).postDelayed({
+                class AExceptiOner(message: String, cause: Throwable?) : RuntimeException(message, cause)
+                throw AExceptiOner("Test exception", RuntimeException("dknown"))
+            }, 15000)
         }
 
         override fun onServiceDisconnected(name: ComponentName) {
@@ -94,12 +101,25 @@ class MethodCallHandlerImpl(private val context: Context) : MethodChannel.Method
         connecting = false
     }
 
+    private fun onUncaughtException(t: Thread, e: Throwable) {
+        val message = Message.obtain(null, InstallerConstants.INCOMING_MESSAGE_UNHANDLED_EXCEPTION)
+        message.data = Bundle().apply {
+            val exceptionJsonObject = wrapThrowableToJson(e)
+            val threadJsonObject = JSONObject().put(InstallerConstants.THREAD_NAME_KEY, t.name)
+            val fullJsonObject = JSONObject()
+            fullJsonObject.put(InstallerConstants.EXCEPTION_KEY, exceptionJsonObject)
+            fullJsonObject.put(InstallerConstants.THREAD_KEY, threadJsonObject)
+            putString(InstallerConstants.EXCEPTION_KEY, fullJsonObject.toString())
+        }
+        Log.e("onUncaughtException", "onUncaughtException")
+        sendMessage(message)
+    }
+
     private fun sendMessage(message: Message) {
         if (!connected) {
             Log.e(TAG, "sendMessage failed: not connected")
             return
         }
-//        message.replyTo = responseMessenger
         try {
             messenger!!.send(message)
         } catch (e: RemoteException) {
@@ -111,5 +131,28 @@ class MethodCallHandlerImpl(private val context: Context) : MethodChannel.Method
         private const val TAG = "MethodCallHandlerImpl"
         private const val APPLICATION_PACKAGE_NAME = "com.codegemz.flutlab.installer"
         private const val SERVICE_CLASS_NAME = "com.codegemz.flutlab.installer.log.LogService"
+
+        fun wrapThrowableToJson(t: Throwable): JSONObject {
+            val jsonObject = JSONObject()
+            jsonObject.put(InstallerConstants.THROWABLE_CLASS_NAME_KEY, t::class.java.name)
+            jsonObject.put(InstallerConstants.THROWABLE_MESSAGE_KEY, t.message)
+            val cause = t.cause
+            if (cause != null) {
+                jsonObject.put(InstallerConstants.THROWABLE_CAUSE_KEY, wrapThrowableToJson(cause))
+            }
+            val stackTrace = t.stackTrace
+            val jsonArray = JSONArray()
+            stackTrace.forEach {
+                val stackTraceElementJSONObject = JSONObject()
+                stackTraceElementJSONObject.put(InstallerConstants.STACK_TRACE_ELEMENT_CLASS_NAME_KEY, it.className)
+                stackTraceElementJSONObject.put(InstallerConstants.STACK_TRACE_ELEMENT_METHOD_NAME_KEY, it.methodName)
+                stackTraceElementJSONObject.put(InstallerConstants.STACK_TRACE_ELEMENT_FILE_NAME_KEY, it.fileName)
+                stackTraceElementJSONObject.put(InstallerConstants.STACK_TRACE_ELEMENT_LINE_NUMBER_KEY, it.lineNumber)
+                stackTraceElementJSONObject.put(InstallerConstants.STACK_TRACE_ELEMENT_IS_NATIVE_METHOD_KEY, it.isNativeMethod)
+                jsonArray.put(stackTraceElementJSONObject)
+            }
+            jsonObject.put(InstallerConstants.THROWABLE_STACK_TRACE_KEY, jsonArray)
+            return jsonObject
+        }
     }
 }
