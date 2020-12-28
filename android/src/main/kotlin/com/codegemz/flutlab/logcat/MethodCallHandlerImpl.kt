@@ -35,10 +35,6 @@ class MethodCallHandlerImpl(private val context: Context) : MethodChannel.Method
                 }
             })
             this.logsObserver = logsObserver
-            Handler(Looper.getMainLooper()).postDelayed({
-                class AExceptiOner(message: String, cause: Throwable?) : RuntimeException(message, cause)
-                throw AExceptiOner("Test exception", RuntimeException("dknown"))
-            }, 15000)
         }
 
         override fun onServiceDisconnected(name: ComponentName) {
