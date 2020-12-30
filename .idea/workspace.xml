@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9dd937d-a4e5-4659-bc7e-bdc75e656c42" name="Default Changelist" comment="" />
+    <list default="true" id="c9dd937d-a4e5-4659-bc7e-bdc75e656c42" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/com/codegemz/flutlab/logcat/InstallerConstants.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/codegemz/flutlab/logcat/InstallerConstants.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/com/codegemz/flutlab/logcat/MethodCallHandlerImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/codegemz/flutlab/logcat/MethodCallHandlerImpl.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +24,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="dart.analysis.tool.window.force.activate" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
@@ -42,22 +47,30 @@
       <option name="project" value="LOCAL" />
       <updated>1608800915215</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="dev test version">
+      <created>1609163706130</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1609163706130</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="UncaughtExceptionHandler" />
-    <option name="LAST_COMMIT_MESSAGE" value="UncaughtExceptionHandler" />
+    <MESSAGE value="dev test version" />
+    <option name="LAST_COMMIT_MESSAGE" value="dev test version" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607616192932">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.95.1600.860/0.0.1920.1040@0.0.1920.1040" timestamp="1607616192932" />
-    <state x="385" y="0" key="CommitChangelistDialog2" timestamp="1608800914081">
+    <state x="385" y="0" key="CommitChangelistDialog2" timestamp="1609163704953">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="385" y="0" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1608800914081" />
+    <state x="385" y="0" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1609163704953" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1607686211505">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -4,6 +4,7 @@ object InstallerConstants {
     const val INCOMING_MESSAGE_LOG_LINE_KEY = 1
     const val INCOMING_MESSAGE_UNHANDLED_EXCEPTION = 2
     const val LINE_KEY = "line"
+    const val PACKAGE_NAME_KEY = "packageName"
     const val EXCEPTION_KEY = "exception"
     const val THREAD_KEY = "thread"
     const val THREAD_NAME_KEY = "name"

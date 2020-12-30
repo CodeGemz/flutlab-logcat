@@ -18,6 +18,7 @@ class MethodCallHandlerImpl(private val context: Context) : MethodChannel.Method
     private var messenger: Messenger? = null
     private var connecting = false
     private var connected = false
+    private val packageName = context.packageName
 
     private val serviceConnection: ServiceConnection = object : ServiceConnection {
         var logsObserver: LogsObserver? = null
@@ -30,6 +31,7 @@ class MethodCallHandlerImpl(private val context: Context) : MethodChannel.Method
                     val message = Message.obtain(null, InstallerConstants.INCOMING_MESSAGE_LOG_LINE_KEY)
                     message.data = Bundle().apply {
                         putString(InstallerConstants.LINE_KEY, line)
+                        putString(InstallerConstants.PACKAGE_NAME_KEY, packageName)
                     }
                     sendMessage(message)
                 }
