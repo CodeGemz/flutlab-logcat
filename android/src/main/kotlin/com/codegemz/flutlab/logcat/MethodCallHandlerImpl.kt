@@ -11,6 +11,7 @@ import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
 import org.json.JSONArray
 import org.json.JSONObject
+import java.lang.ref.WeakReference
 
 
 class MethodCallHandlerImpl(private val context: Context) : MethodChannel.MethodCallHandler {
@@ -19,6 +20,8 @@ class MethodCallHandlerImpl(private val context: Context) : MethodChannel.Method
     private var connecting = false
     private var connected = false
     private val packageName = context.packageName
+    private var initResultFuture: MethodChannel.Result? = null
+    private val replyMessenger = Messenger(IncomingHandler(this))
 
     private val serviceConnection: ServiceConnection = object : ServiceConnection {
         var logsObserver: LogsObserver? = null
@@ -37,6 +40,9 @@ class MethodCallHandlerImpl(private val context: Context) : MethodChannel.Method
                 }
             })
             this.logsObserver = logsObserver
+            val message = Message.obtain(null, InstallerConstants.INCOMING_MESSAGE_AWAIT_PEER_CONNECTION)
+            message.replyTo = replyMessenger
+            sendMessage(message)
         }
 
         override fun onServiceDisconnected(name: ComponentName) {
@@ -92,7 +98,7 @@ class MethodCallHandlerImpl(private val context: Context) : MethodChannel.Method
         Log.i(TAG, "Bind: $bindSuccess")
 
         if (bindSuccess) {
-            result.success("Bind success")
+            initResultFuture = result
         } else {
             result.error("bind_result_false", "Bind returned failed", null)
         }
@@ -122,6 +128,35 @@ class MethodCallHandlerImpl(private val context: Context) : MethodChannel.Method
             messenger!!.send(message)
         } catch (e: RemoteException) {
             Log.e(TAG, "sendMessage failed: ${e.message}")
+        }
+    }
+
+    private fun onAwaitPeerConnectionSuccess() {
+        val initResultFuture = initResultFuture ?: return
+        initResultFuture.success("")
+    }
+
+    private fun onAwaitPeerConnectionFailure(errorMessage: String?) {
+        val initResultFuture = initResultFuture ?: return
+        initResultFuture.error("connection_failure", errorMessage, null)
+    }
+
+    private class IncomingHandler(methodCallHandler: MethodCallHandlerImpl) : Handler() {
+        private val methodCallHandlerReference = WeakReference<MethodCallHandlerImpl>(methodCallHandler)
+
+        override fun handleMessage(msg: Message) {
+            when (msg.what) {
+                InstallerConstants.OUTCOMING_MESSAGE_AWAIT_PEER_CONNECTION_RESULT -> {
+                    val methodCallHandlerImpl = methodCallHandlerReference.get() ?: return
+                    when (msg.data.getInt(InstallerConstants.AWAIT_PEER_CONNECTION_RESULT_KEY, -1)) {
+                        InstallerConstants.AWAIT_PEER_CONNECTION_RESULT_SUCCESS -> methodCallHandlerImpl.onAwaitPeerConnectionSuccess()
+                        InstallerConstants.AWAIT_PEER_CONNECTION_RESULT_FAILURE -> {
+                            val errorMessage = msg.data.getString(InstallerConstants.ERROR_MESSAGE_KEY)
+                            methodCallHandlerImpl.onAwaitPeerConnectionFailure(errorMessage)
+                        }
+                    }
+                }
+            }
         }
     }
 

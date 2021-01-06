@@ -3,11 +3,17 @@ package com.codegemz.flutlab.logcat
 object InstallerConstants {
     const val INCOMING_MESSAGE_LOG_LINE_KEY = 1
     const val INCOMING_MESSAGE_UNHANDLED_EXCEPTION = 2
+    const val INCOMING_MESSAGE_AWAIT_PEER_CONNECTION = 3
+    const val OUTCOMING_MESSAGE_AWAIT_PEER_CONNECTION_RESULT = 1
     const val LINE_KEY = "line"
     const val PACKAGE_NAME_KEY = "packageName"
     const val EXCEPTION_KEY = "exception"
     const val THREAD_KEY = "thread"
     const val THREAD_NAME_KEY = "name"
+    const val AWAIT_PEER_CONNECTION_RESULT_KEY = "result"
+    const val AWAIT_PEER_CONNECTION_RESULT_SUCCESS = 1
+    const val AWAIT_PEER_CONNECTION_RESULT_FAILURE = 2
+    const val ERROR_MESSAGE_KEY = "error_message"
 
     const val THROWABLE_CLASS_NAME_KEY = "className"
     const val THROWABLE_MESSAGE_KEY = "message"

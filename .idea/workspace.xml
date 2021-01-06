@@ -8,6 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/com/codegemz/flutlab/logcat/InstallerConstants.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/codegemz/flutlab/logcat/InstallerConstants.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/com/codegemz/flutlab/logcat/MethodCallHandlerImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/codegemz/flutlab/logcat/MethodCallHandlerImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,23 +55,36 @@
       <option name="project" value="LOCAL" />
       <updated>1609163706130</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="app package name">
+      <created>1609325845056</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1609325845056</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="UncaughtExceptionHandler" />
     <MESSAGE value="dev test version" />
-    <option name="LAST_COMMIT_MESSAGE" value="dev test version" />
+    <MESSAGE value="app package name" />
+    <option name="LAST_COMMIT_MESSAGE" value="app package name" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607616192932">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.95.1600.860/0.0.1920.1040@0.0.1920.1040" timestamp="1607616192932" />
-    <state x="385" y="0" key="CommitChangelistDialog2" timestamp="1609163704953">
+    <state x="345" y="145" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609915597020">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="385" y="0" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1609163704953" />
+    <state x="345" y="145" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.860@0.0.1600.860" timestamp="1609915597020" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.95.1600.860/0.0.1920.1040@0.0.1920.1040" timestamp="1607616192932" />
+    <state x="620" y="292" key="#com.intellij.ide.util.TreeFileChooserDialog" timestamp="1609915587861">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="620" y="292" key="#com.intellij.ide.util.TreeFileChooserDialog/0.0.1600.860@0.0.1600.860" timestamp="1609915587861" />
+    <state x="385" y="0" key="CommitChangelistDialog2" timestamp="1609325844244">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="385" y="0" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1609325844244" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1607686211505">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
