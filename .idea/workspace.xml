@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c9dd937d-a4e5-4659-bc7e-bdc75e656c42" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/com/codegemz/flutlab/logcat/MethodCallHandlerImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/codegemz/flutlab/logcat/MethodCallHandlerImpl.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/flutlab_logcat.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/flutlab_logcat.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
