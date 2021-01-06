@@ -56,6 +56,7 @@ class MethodCallHandlerImpl(private val context: Context) : MethodChannel.Method
     override fun onMethodCall(call: MethodCall, result: MethodChannel.Result) {
         when (call.method) {
             "init" -> init(result)
+            "throwNativeCrash" -> throwNativeCrash()
             else -> result.notImplemented()
         }
     }
@@ -103,6 +104,12 @@ class MethodCallHandlerImpl(private val context: Context) : MethodChannel.Method
             result.error("bind_result_false", "Bind returned failed", null)
         }
         connecting = false
+    }
+
+    private fun throwNativeCrash() {
+        Handler(Looper.getMainLooper()).post {
+            throw RuntimeException("Native crash")
+        }
     }
 
     private fun onUncaughtException(t: Thread, e: Throwable) {

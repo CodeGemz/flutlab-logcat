@@ -6,6 +6,7 @@ import 'package:flutlab_logcat/flutlab_logcat.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await FlutLabLogcat.init();
+  await FlutLabLogcat.throwNativeCrash();
   runApp(MyApp());
 }
 
