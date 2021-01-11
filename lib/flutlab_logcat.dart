@@ -26,10 +26,10 @@ class FlutLabLogcat {
 
   static Future<void> throwNativeCrash() {
     if (kIsWeb) {
-      return;
+      return Future.value();
     }
     if (!Platform.isAndroid) {
-      return;
+      return Future.value();
     }
     return _channel.invokeMethod('throwNativeCrash');
   }
