@@ -1,18 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9dd937d-a4e5-4659-bc7e-bdc75e656c42" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[VirtualDevicePath@C:\Users\timon\.android\avd\Pixel_4_API_29.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[SerialNumber@5203d38bb4858355]" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -66,7 +73,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609916879573</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="explicit return value warning fix">
+      <created>1610383998246</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1610383998247</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -74,7 +88,8 @@
     <MESSAGE value="dev test version" />
     <MESSAGE value="app package name" />
     <MESSAGE value="await peer connection" />
-    <option name="LAST_COMMIT_MESSAGE" value="await peer connection" />
+    <MESSAGE value="explicit return value warning fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="explicit return value warning fix" />
   </component>
   <component name="WindowStateProjectService">
     <state x="345" y="145" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609915597020">
@@ -86,10 +101,11 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="620" y="292" key="#com.intellij.ide.util.TreeFileChooserDialog/0.0.1600.860@0.0.1600.860" timestamp="1609915587861" />
-    <state x="385" y="0" key="CommitChangelistDialog2" timestamp="1609916878579">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state x="1064" y="119" key="CommitChangelistDialog2" timestamp="1610383997258">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="385" y="0" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1609916878579" />
+    <state x="1064" y="119" key="CommitChangelistDialog2/1920.95.1600.860/0.0.1920.1040@0.0.1920.1040" timestamp="1610383997258" />
     <state x="152" y="67" key="DiffContextDialog" timestamp="1609916861977">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -114,6 +130,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.right/1920.95.1600.860/0.0.1920.1040@0.0.1920.1040" timestamp="1607619654936" />
+    <state x="667" y="253" width="585" height="534" key="find.popup" timestamp="1610464738973">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="667" y="253" width="585" height="534" key="find.popup/1920.95.1600.860/0.0.1920.1040@0.0.1920.1040" timestamp="1610464738973" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1610371787227">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
