@@ -3,7 +3,8 @@
 ## How to use:
 
 Add this library to your pubspec.yaml:
-```flutlab_logcat:
+```
+flutlab_logcat:
   git: https://github.com/CodeGemz/flutlab-logcat.git
 ```
 
