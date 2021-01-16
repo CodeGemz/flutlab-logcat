@@ -2,6 +2,11 @@
 
 ## How to use:
 
+Add this library to your pubspec.yaml:
+```flutlab_logcat:
+  git: https://github.com/CodeGemz/flutlab-logcat.git
+```
+
 You can initialize the plugin in 2 ways: synchronously and asynchronously
 Using the synchronous method the app will wait for at least one connection
 
