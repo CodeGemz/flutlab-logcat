@@ -1,10 +1,9 @@
-package com.codegemz.flutlab.logcat
+package com.flutlab.logcat
 
 import android.content.Context
 import io.flutter.embedding.engine.plugins.FlutterPlugin
 import io.flutter.plugin.common.BinaryMessenger
 import io.flutter.plugin.common.MethodChannel
-import io.flutter.plugin.common.PluginRegistry.Registrar
 
 class FlutLabLogcatPlugin : FlutterPlugin {
   private var channel: MethodChannel? = null
@@ -29,6 +28,6 @@ class FlutLabLogcatPlugin : FlutterPlugin {
   }
 
   companion object {
-    private const val CHANNEL = "com.codegemz.flutlab/logcat"
+    private const val CHANNEL = "com.flutlab/logcat"
   }
 }

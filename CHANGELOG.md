@@ -1,3 +1,7 @@
+## 0.0.2
+
+* NullSafety support
+
 ## 0.0.1
 
-* TODO: Describe initial release.
+* Inital release

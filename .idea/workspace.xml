@@ -9,17 +9,38 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9dd937d-a4e5-4659-bc7e-bdc75e656c42" name="Default Changelist" comment="">
+    <list default="true" id="c9dd937d-a4e5-4659-bc7e-bdc75e656c42" name="Default Changelist" comment="explicit return value warning fix">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/example.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/com/codegemz/flutlab/logcat/FlutLabLogcatPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/flutlab/logcat/FlutLabLogcatPlugin.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/com/codegemz/flutlab/logcat/GlobalExceptionHandler.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/flutlab/logcat/GlobalExceptionHandler.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/com/codegemz/flutlab/logcat/InstallerConstants.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/flutlab/logcat/InstallerConstants.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/com/codegemz/flutlab/logcat/LogsObserver.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/flutlab/logcat/LogsObserver.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/com/codegemz/flutlab/logcat/MethodCallHandlerImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/flutlab/logcat/MethodCallHandlerImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/com/codegemz/flutlab/logcat/util/ApplicationUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/flutlab/logcat/util/ApplicationUtils.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/src/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/debug/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/kotlin/com/example/hello_example/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/kotlin/com/flutlab/logcat/example/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/src/profile/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/profile/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/flutlab_logcat.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/flutlab_logcat.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[SerialNumber@5203d38bb4858355]" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -30,11 +51,25 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="cidr.known.project.marker" value="true" />
     <property name="dart.analysis.tool.window.force.activate" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/example" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration name="example" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true">
+      <option name="filePath" value="$PROJECT_DIR$/example/lib/main.dart" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Flutter.example" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -83,6 +118,18 @@
     <option name="localTasksCounter" value="6" />
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="UncaughtExceptionHandler" />
     <MESSAGE value="dev test version" />
@@ -90,53 +137,5 @@
     <MESSAGE value="await peer connection" />
     <MESSAGE value="explicit return value warning fix" />
     <option name="LAST_COMMIT_MESSAGE" value="explicit return value warning fix" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="345" y="145" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609915597020">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="345" y="145" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.860@0.0.1600.860" timestamp="1609915597020" />
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.95.1600.860/0.0.1920.1040@0.0.1920.1040" timestamp="1607616192932" />
-    <state x="620" y="292" key="#com.intellij.ide.util.TreeFileChooserDialog" timestamp="1609915587861">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="620" y="292" key="#com.intellij.ide.util.TreeFileChooserDialog/0.0.1600.860@0.0.1600.860" timestamp="1609915587861" />
-    <state x="1064" y="119" key="CommitChangelistDialog2" timestamp="1610383997258">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="385" y="0" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1609916878579" />
-    <state x="1064" y="119" key="CommitChangelistDialog2/1920.95.1600.860/0.0.1920.1040@0.0.1920.1040" timestamp="1610383997258" />
-    <state x="152" y="67" key="DiffContextDialog" timestamp="1609916861977">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="152" y="67" key="DiffContextDialog/0.0.1600.860@0.0.1600.860" timestamp="1609916861977" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1607686211505">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/1920.95.1600.860/0.0.1920.1040@0.0.1920.1040" timestamp="1607686211505" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1607619654937">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/1920.95.1600.860/0.0.1920.1040@0.0.1920.1040" timestamp="1607619654937" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1607619654936">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/1920.95.1600.860/0.0.1920.1040@0.0.1920.1040" timestamp="1607619654936" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1607619654936">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/1920.95.1600.860/0.0.1920.1040@0.0.1920.1040" timestamp="1607619654936" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1607619654936">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/1920.95.1600.860/0.0.1920.1040@0.0.1920.1040" timestamp="1607619654936" />
-    <state x="667" y="253" width="585" height="534" key="find.popup" timestamp="1610464738973">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="667" y="253" width="585" height="534" key="find.popup/1920.95.1600.860/0.0.1920.1040@0.0.1920.1040" timestamp="1610464738973" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1610371787227">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.95.1600.860/0.0.1920.1040@0.0.1920.1040" timestamp="1610371787227" />
   </component>
 </project>

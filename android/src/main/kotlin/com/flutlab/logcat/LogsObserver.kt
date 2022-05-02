@@ -1,4 +1,4 @@
-package com.codegemz.flutlab.logcat
+package com.flutlab.logcat
 
 import android.util.Log
 import java.io.BufferedReader
@@ -29,12 +29,10 @@ class LogsObserver {
             val bufferedReader = BufferedReader(
                     InputStreamReader(process.inputStream)
             )
-            val log = StringBuilder()
             var line: String
             try {
                 while (bufferedReader.readLine().also { line = it ?: "" } != null) {
                     callback.onLogLine(line)
-//                    log.append("OBSERVABLE: $line\n")
                 }
             } catch (e: IOException) {
                 Log.e(TAG, "readLine failed", e)

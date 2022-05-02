@@ -7,7 +7,7 @@
 Add this library to your pubspec.yaml:
 ```
 flutlab_logcat:
-  git: https://github.com/CodeGemz/flutlab-logcat.git
+  git: https://github.com/FlutLab/flutlab-logcat.git
 ```
 
 You can initialize the plugin in 2 ways: synchronously and asynchronously

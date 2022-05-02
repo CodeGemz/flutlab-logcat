@@ -1,4 +1,4 @@
-package com.codegemz.flutlab.logcat
+package com.flutlab.logcat
 
 import android.content.ComponentName
 import android.content.Context
@@ -6,7 +6,7 @@ import android.content.Intent
 import android.content.ServiceConnection
 import android.os.*
 import android.util.Log
-import com.codegemz.flutlab.logcat.util.ApplicationUtils
+import com.flutlab.logcat.util.ApplicationUtils
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
 import org.json.JSONArray
@@ -78,7 +78,7 @@ class MethodCallHandlerImpl(private val context: Context) : MethodChannel.Method
             connecting = false
             return
         }
-        val intent = Intent("com.codegemz.flutlab.installer.LOG_SERVICE")
+        val intent = Intent(LOG_SERVICE_ACTION)
         val componentName = ComponentName(
                 APPLICATION_PACKAGE_NAME,
                 SERVICE_CLASS_NAME
@@ -149,7 +149,7 @@ class MethodCallHandlerImpl(private val context: Context) : MethodChannel.Method
     }
 
     private class IncomingHandler(methodCallHandler: MethodCallHandlerImpl) : Handler() {
-        private val methodCallHandlerReference = WeakReference<MethodCallHandlerImpl>(methodCallHandler)
+        private val methodCallHandlerReference = WeakReference(methodCallHandler)
 
         override fun handleMessage(msg: Message) {
             when (msg.what) {
@@ -171,6 +171,7 @@ class MethodCallHandlerImpl(private val context: Context) : MethodChannel.Method
         private const val TAG = "MethodCallHandlerImpl"
         private const val APPLICATION_PACKAGE_NAME = "com.codegemz.flutlab.installer"
         private const val SERVICE_CLASS_NAME = "com.codegemz.flutlab.installer.log.LogService"
+        private const val LOG_SERVICE_ACTION = "com.codegemz.flutlab.installer.LOG_SERVICE"
 
         fun wrapThrowableToJson(t: Throwable): JSONObject {
             val jsonObject = JSONObject()

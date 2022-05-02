@@ -1,4 +1,4 @@
-package com.codegemz.flutlab.logcat.util
+package com.flutlab.logcat.util
 
 import android.content.Context
 import android.content.pm.ApplicationInfo

@@ -1,2 +1,1 @@
-<manifest package="com.codegemz.flutlab.logcat">
-</manifest>
+<manifest package="com.flutlab.logcat" />

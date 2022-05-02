@@ -7,21 +7,24 @@ import 'package:flutter/foundation.dart' show kIsWeb;
 
 class FlutLabLogcat {
   static const MethodChannel _channel =
-      const MethodChannel('com.codegemz.flutlab/logcat');
+      const MethodChannel('com.flutlab/logcat');
 
-  static Future<void> init() async {
-    if (kIsWeb) {
-      return;
-    }
-    if (!Platform.isAndroid) {
-      return;
+  static bool get isSupports {
+    return Platform.isAndroid;
+  }
+
+  static Future<bool> init() async {
+    if (!isSupports) {
+      return false;
     }
     try {
       await _channel.invokeMethod('init');
       print("FlutLabLogcat initialized");
+      return true;
     } on PlatformException catch (e) {
       print("Failed initialize FlutLabLogcat: $e");
     }
+    return false;
   }
 
   static Future<void> throwNativeCrash() {

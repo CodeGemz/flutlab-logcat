@@ -1,4 +1,4 @@
-package com.codegemz.flutlab.logcat
+package com.flutlab.logcat
 
 class GlobalExceptionHandler(
         private val callback: (t: Thread, e: Throwable) -> Unit
